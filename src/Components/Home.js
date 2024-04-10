@@ -42,6 +42,15 @@ export class NavbarCom extends Component {
           <li class="nav-item">
             <a class="nav-link" href="/profile">Profile</a>
           </li>
+                   
+          <li class="nav-item">
+            <a class="nav-link" href="/register">register</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/getallmembers">Community Members</a>
+          </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Ads
@@ -53,6 +62,55 @@ export class NavbarCom extends Component {
               <li><a class="dropdown-item" href="/advertise">Add Advertise</a></li>
             </ul>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Education
+            </a>
+            <ul class="dropdown-menu">
+             
+              <li><a class="dropdown-item" href="/inserteducation">inserteducation</a></li>
+              <li><hr class="dropdown-divider"/></li>
+              <li><a class="dropdown-item" href="/education">education</a></li>
+              <li><hr class="dropdown-divider"/></li>
+              <li><a class="dropdown-item" href="/updateeducation"> update education</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Family Members
+            </a>
+            <ul class="dropdown-menu">
+             
+              <li><a class="dropdown-item" href="/insertmembers">insert familymembers</a></li>
+              <li><hr class="dropdown-divider"/></li>
+              <li><a class="dropdown-item" href="/showmembers">FamilyMembers</a></li>
+            </ul>
+          </li>
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Occupation
+            </a>
+            <ul class="dropdown-menu">
+             
+              <li><a class="dropdown-item" href="/showoccupation">showoccupation</a></li>
+              <li><hr class="dropdown-divider"/></li>
+              <li><a class="dropdown-item" href="/insertoccupation">Add occupation</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu">
+             
+              <li><a class="dropdown-item" href="/showevents">showoevents</a></li>
+              <li><hr class="dropdown-divider"/></li>
+              <li><a class="dropdown-item" href="/insertevents">Add events</a></li>
+            </ul>
+          </li>
+         
          
         </ul>
         

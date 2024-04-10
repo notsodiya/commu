@@ -46,6 +46,8 @@ const handleSave =() =>{
         Email: emailid,
         Password: password,
     };
+
+    
 const url ='http://localhost:51294/api/Register';
     axios.post(url, data).then((results) =>{
         // if(results.data === 'Data inserted.')

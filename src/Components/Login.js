@@ -40,6 +40,7 @@ function Login() {
       } else {
         //setError(data.Message);
         localStorage.setItem('FamilyMemberId', data.Data.user[0].FamilyMemberId);
+        localStorage.setItem('FamilyId', data.Data.user[0].FamilyId);
         window.location.href ="/home"
       }
     } catch (err) {

@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-function FamilyDataFetcher() {
+function Getallmembers() {
   const [familyData, setFamilyData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -10,13 +10,13 @@ function FamilyDataFetcher() {
       try {
         setLoading(true);
         setError(null);
-        const userId = localStorage.getItem('FamilyMemberId'); // Retrieve the Id from localStorage
-        const response = await fetch('http://localhost:51294/api/GetById', {
+        //const userId = localStorage.getItem('FamilyId'); // Retrieve the Id from localStorage
+        const response = await fetch('http://localhost:51294/api/GetAllValues', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify({ Id: userId })
+         // body: JSON.stringify({ FamilyId: userId }) 
         });
 
         if (!response.ok) {
@@ -71,4 +71,4 @@ function FamilyDataFetcher() {
   );
 }
 
-export default FamilyDataFetcher;
+export default Getallmembers;
